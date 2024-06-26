@@ -11,3 +11,8 @@
 
 ## Notebooks: 📔 
 
+* `dim_region_nation`: Region and Nation Streaming tables (bronze) are created and joined together as a Live table (silver)
+* `fact_customers`: Customers Streaming table (bronze) ingests data. Customers Live table (silver) forms by cleaning data and joining with the dim_region_nation Live table (silver)
+* `fact_orders`: Orders Streaming tables import data (bronze) and clean data (silver). orders_by_customers table (gold) joins orders (silver) with customers (silver) and groups/rounds data
+* `hemisphere_views`: Eastern & Western Hemisphere tables are created by selecting data from orders_by_customers (gold) and filtering based on region
+
