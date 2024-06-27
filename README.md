@@ -11,10 +11,10 @@
 
 ## Notebooks: 📔 
 
-* `dim_region_nation`: Region and Nation Streaming tables (bronze) are created and joined together as a Live table (silver)
+* `dim_region_nation`: Region and Nation Streaming tables (bronze) pull data and region_nation Live table (silver) join them together
 * `fact_customers`: Customers Streaming table (bronze) ingests data. Customers Live table (silver) forms by cleaning data and joining with the dim_region_nation Live table (silver)
-* `fact_orders`: Orders Streaming tables import data (bronze) and clean data (silver). orders_by_customers table (gold) joins orders (silver) with customers (silver) and groups/rounds data
-* `hemisphere_views`: Eastern & Western Hemisphere tables are created by selecting data from orders_by_customers (gold) and filtering based on region
+* `fact_orders`: Orders Streaming tables import data (bronze) and clean data (silver). orders_by_customers Live table (gold) joins orders (silver) with customers (silver) and groups/rounds data
+* `hemisphere_views`: Eastern & Western Hemisphere Live tables select data from orders_by_customers (gold) and filter based on region
 
 ## Directed Acyclic Graphs (DAGs):
 
@@ -31,8 +31,13 @@ Orders-DLT-Pipeline: 2nd Run
 ## Setup & Resources:
 
 Setup:
-   * Databricks Runtime
+   * Databricks via Amazon Web Services 
+   * Databricks Runtime 14.3 LTS
 
 Resources:
-   * Databricks Runtime
+   * Datasets - Databricks `Samples` Catalog > `tpch` Database
+   * Storage - Amazon Web Services s3 buckets
+   * Data Visualization - Microsoft Power BI
+   
+   
 
