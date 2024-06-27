@@ -28,6 +28,14 @@ Orders-DLT-Pipeline: 2nd Run
    * s3 bucket has 1 new customers .csv file and 1 new orders .csv file added to their respective folders
    * Customer and Orders Streaming tables pull in new records and add them to Live tables if they pass constraints
 
+## Power BI Report:
+
+Western:
+![image](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/a559132e-722e-4321-9835-57880f52c04e)
+
+Eastern:
+![image](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/6336e8af-199a-4b46-92bb-b76443f07ade)
+
 ## Setup & Resources:
 
 Databricks Setup:
