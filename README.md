@@ -19,11 +19,13 @@
 ## Directed Acyclic Graphs (DAGs):
 
 Orders-DLT-Pipeline: Initial Run
+
 ![image](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/609ebd23-912c-4a52-a599-46c709b25c59)
    * s3 bucket contains 1 folder for each dataset (region, nation, customer, and orders)
    * Pipeline run is successful. Rows in green are successfully transitioned to tables and rows in grey are filtered out due to constraints
 
 Orders-DLT-Pipeline: 2nd Run
+
 ![image](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/61d5b937-30fa-483d-915e-661c3ed2e37a)
    * s3 bucket has 1 new customers .csv file and 1 new orders .csv file added to their respective folders
    * Customer and Orders Streaming tables pull in new records and add them to Live tables if they pass constraints
@@ -31,9 +33,11 @@ Orders-DLT-Pipeline: 2nd Run
 ## Power BI Reports:
 
    Western:
+
 ![image](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/a559132e-722e-4321-9835-57880f52c04e)
 
    Eastern:
+   
 ![image](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/6336e8af-199a-4b46-92bb-b76443f07ade)
 
 ## Setup & Resources:
