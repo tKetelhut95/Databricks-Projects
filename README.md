@@ -1,7 +1,7 @@
 # Databricks-Orders-Pipeline
 
 ## Business Requirements: 
-  * The leadership team needs a Dashboard that shows order amounts and customer balances broken down by region, nation, and market segment...preferably into hemisphere views for East and West
+  * The leadership team needs a Dashboard that shows order amounts and customer balances broken down by region, nation, and market segment ...preferably into hemisphere views for East and West
   * The orders should only contain data on or after 1995-01-01
   * The data needs to be updated automatically as new orders and customer data are transported into the s3 buckets
 
