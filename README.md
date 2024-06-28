@@ -9,6 +9,11 @@
 ![Databricks-Orders-Pipeline](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/40b0bb2b-3c86-4acd-b097-32568a584fb3)
 
 
+## Data Source:
+* Amazon Web Services s3 Buckets contains a separate folder for each dataset
+![image](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/cd77859f-23de-47be-a549-cac2b13d8a47)
+
+
 ## Notebooks: 📔 
 
 * `dim_region_nation`: Region and Nation Streaming tables (bronze) pull data. region_nation Live table (silver) join them together
