@@ -31,7 +31,6 @@
 `Orders-DLT-Pipeline: Initial Run`
 
 ![image](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/609ebd23-912c-4a52-a599-46c709b25c59)
-   * s3 bucket contains 1 folder for each dataset (region, nation, customer, and orders)
    * Pipeline run is successful. Rows in green are successfully transitioned to tables and rows in grey are filtered out due to constraints
 
 `Orders-DLT-Pipeline: Job Triggered Run`
