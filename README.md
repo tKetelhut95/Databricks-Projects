@@ -31,7 +31,8 @@ Orders-DLT-Pipeline: 2nd Run
    * Customer and Orders Streaming tables pull in only new records and add them to Live tables if they pass constraints
 
 ## Power BI Dashboards:
-
+   * Imported Databricks Eastern and Western Hemisphere Live tables and leveraged Power Query and DAX Switch equations to perform data transformations
+   * Create a dashboard for Western and Eastern views with a color-coded map for total order amount ranks for each nation and matrix displaying orders data at a more granular level
    Western:
 
 ![image](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/9c679051-9931-4fae-be21-a4c25304f1e8)
