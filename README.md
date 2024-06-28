@@ -9,7 +9,7 @@
 ![Databricks-Orders-Pipeline](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/40b0bb2b-3c86-4acd-b097-32568a584fb3)
 
 
-## Data Source:
+## Data Source(s):
 
 * Amazon Web Services s3 Buckets contains a separate folder for each dataset
 * All datasets will be in .csv format...dim signifies dimension table and fact represents fact table
