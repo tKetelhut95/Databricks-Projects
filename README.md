@@ -12,7 +12,7 @@
 ## Data Source:
 
 * Amazon Web Services s3 Buckets contains a separate folder for each dataset
-* Total of 4 datasets with each in .csv format...dim signifies dimension table and fact represents fact table
+* All datasets will be in .csv format...dim signifies dimension table and fact represents fact table
   
 ![image](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/d4d5a555-bf36-45bb-bba7-7b313989f81f)
 
