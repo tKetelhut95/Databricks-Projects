@@ -1,7 +1,7 @@
 # Databricks-Orders-Pipeline
 
 ## Business Requirements: 
-  * The leadership team needs a Dashboard that shows order amounts and customer balances broken down by region, nation, and market segment ...preferably into hemisphere views for East and West
+  * The Leadership team needs a Dashboard that shows order amounts and customer balances broken down by region, nation, and market segment ...preferably into hemisphere views for East and West
   * The orders should only contain data on or after 1995-01-01
   * The data needs to be updated automatically as new orders and customer data are transported into the s3 buckets
 
@@ -31,11 +31,11 @@
 ![image](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/8dcfad10-a0d6-4191-a182-1b26abfc1244)
 
    * s3 bucket has 1 new customers .csv file and 1 new orders .csv file added to their respective folders
-   * Orders Pipeline Job File Arrival Trigger identifies the above files have arrived and automatically runs a pipeline refresh
+   * Orders Pipeline Job: File Arrival Trigger identifies the above files have arrived and automatically runs a pipeline refresh
    * Customer and Orders Streaming tables pull in only new records and add them to Live tables if they pass constraints
 
-## Power BI Dashboards:
-   * Import Databricks Eastern and Western Hemisphere Live tables and leverage Power Query and DAX Switch equations to perform data transformations
+## Power BI Dashboard:
+   * Import Databricks Eastern and Western Hemisphere Live tables and leverage Power Query and DAX SWITCH equations to perform data transformations
    * Create a dashboard for Western and Eastern views with a color-coded map for total order amount ranks for each nation and matrix table displaying orders data at a more granular level
    
    `Western Hemisphere`:
