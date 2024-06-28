@@ -30,7 +30,7 @@ Orders-DLT-Pipeline: 2nd Run
    * s3 bucket has 1 new customers .csv file and 1 new orders .csv file added to their respective folders
    * Customer and Orders Streaming tables pull in only new records and add them to Live tables if they pass constraints
 
-## Power BI Reports:
+## Power BI Dashboards:
 
    Western:
 
