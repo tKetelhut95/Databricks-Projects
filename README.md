@@ -57,7 +57,7 @@
 ![image](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/9746424f-8ead-42ba-ab9c-c470132ca5b4)
 
 
-## Setup & Resources:
+## Databricks Setup & Resources:
 
 Databricks Setup:
    * Databricks via Amazon Web Services 
@@ -65,8 +65,8 @@ Databricks Setup:
    * Language(s) - SQL & Markdown
 
 Resources:
-   * Datasets - Databricks `Samples` Catalog > `tpch` Database
    * Storage - Amazon Web Services s3 buckets
+   * Datasets - Databricks `Samples` Catalog > `tpch` Databases
    * Data Visualization - Microsoft Power BI
    
    
