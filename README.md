@@ -10,8 +10,11 @@
 
 
 ## Data Source:
+
 * Amazon Web Services s3 Buckets contains a separate folder for each dataset
-![image](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/cd77859f-23de-47be-a549-cac2b13d8a47)
+  
+![image](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/d4d5a555-bf36-45bb-bba7-7b313989f81f)
+
 
 
 ## Notebooks: 📔 
