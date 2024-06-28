@@ -27,6 +27,9 @@ Orders-DLT-Pipeline: Initial Run
 Orders-DLT-Pipeline: Job Triggered Run
 
 ![image](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/65bed1d4-76cc-44f9-87dd-b4b41ee37225)
+
+![image](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/8dcfad10-a0d6-4191-a182-1b26abfc1244)
+
    * s3 bucket has 1 new customers .csv file and 1 new orders .csv file added to their respective folders
    * Orders Pipeline Job trigger identifies the above files have arrived and automatically runs a pipeline refresh
    * Customer and Orders Streaming tables pull in only new records and add them to Live tables if they pass constraints
