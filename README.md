@@ -18,13 +18,13 @@
 
 ## Directed Acyclic Graphs (DAGs):
 
-Orders-DLT-Pipeline: Initial Run
+`Orders-DLT-Pipeline: Initial Run`
 
 ![image](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/609ebd23-912c-4a52-a599-46c709b25c59)
    * s3 bucket contains 1 folder for each dataset (region, nation, customer, and orders)
    * Pipeline run is successful. Rows in green are successfully transitioned to tables and rows in grey are filtered out due to constraints
 
-Orders-DLT-Pipeline: Job Triggered Run
+`Orders-DLT-Pipeline: Job Triggered Run`
 
 ![image](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/65bed1d4-76cc-44f9-87dd-b4b41ee37225)
 
@@ -38,12 +38,12 @@ Orders-DLT-Pipeline: Job Triggered Run
    * Import Databricks Eastern and Western Hemisphere Live tables and leverage Power Query and DAX Switch equations to perform data transformations
    * Create a dashboard for Western and Eastern views with a color-coded map for total order amount ranks for each nation and matrix table displaying orders data at a more granular level
    
-   Western:
+   `Western Hemisphere`:
 
 ![image](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/9c679051-9931-4fae-be21-a4c25304f1e8)
 
 
-   Eastern:
+   `Eastern Hemisphere`:
    
 ![image](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/9746424f-8ead-42ba-ab9c-c470132ca5b4)
 
