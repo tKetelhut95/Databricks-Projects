@@ -18,14 +18,14 @@
 
 
 
-## Notebooks: 📔 
+## Datarbicks: Notebooks 📔 
 
 * `dim_region_nation`: Region and Nation Streaming tables (bronze) pull data. region_nation Live table (silver) join them together
 * `fact_customers`: Customers Streaming table (bronze) ingests data. Customers Live table (silver) forms by cleaning data and joining with the region_nation Live table (silver)
 * `fact_orders`: Orders Streaming tables import data (bronze) and clean data (silver). orders_by_customers Live table (gold) joins orders (silver) with customers (silver) and groups/rounds data
 * `hemisphere_views`: Eastern & Western Hemisphere Live tables select data from orders_by_customers (gold) and filter based on region
 
-## Directed Acyclic Graphs (DAGs):
+## Databricks: Directed Acyclic Graphs (DAGs)
 
 `Orders-DLT-Pipeline: Initial Run`
 
@@ -43,7 +43,7 @@
    * Orders Pipeline Job: File Arrival Trigger identifies the above files have arrived and automatically runs a pipeline refresh
    * Customer and Orders Streaming tables pull in only new records and add them to Live tables if they pass constraints
 
-## Power BI Dashboard:
+## Power BI: Dashboard
    * Import Databricks Eastern and Western Hemisphere Live tables and leverage Power Query and DAX SWITCH equations to perform data transformations
    * Create a dashboard for Western and Eastern views with a color-coded map for total order amount ranks for each nation and matrix table displaying orders data at a more granular level
    
