@@ -11,6 +11,7 @@
 
 ## Data Source(s):
 
+* Datasets originate from Databricks sample datasets
 * Amazon Web Services s3 Bucket contains a separate folder for each dataset
 * All datasets are in .csv format...dim signifies dimension table and fact represents fact table
   
