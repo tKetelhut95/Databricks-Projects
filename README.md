@@ -18,14 +18,14 @@
 
 
 
-## Datarbicks: Notebooks 📔 
+## Databricks: Notebooks 📔 
 
 * `dim_region_nation`: Region and Nation Streaming tables (bronze) pull data. region_nation Live table (silver) join them together
 * `fact_customers`: Customers Streaming table (bronze) ingests data. Customers Live table (silver) forms by cleaning data and joining with the region_nation Live table (silver)
 * `fact_orders`: Orders Streaming tables import data (bronze) and clean data (silver). orders_by_customers Live table (gold) joins orders (silver) with customers (silver) and groups/rounds data
 * `hemisphere_views`: Eastern & Western Hemisphere Live tables select data from orders_by_customers (gold) and filter based on region
 
-## Databricks: Directed Acyclic Graphs (DAGs)
+## Databricks: DLT Pipeline DAGs and Job
 
 `Orders-DLT-Pipeline: Initial Run`
 
