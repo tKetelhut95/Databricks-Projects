@@ -24,10 +24,11 @@ Orders-DLT-Pipeline: Initial Run
    * s3 bucket contains 1 folder for each dataset (region, nation, customer, and orders)
    * Pipeline run is successful. Rows in green are successfully transitioned to tables and rows in grey are filtered out due to constraints
 
-Orders-DLT-Pipeline: 2nd Run
+Orders-DLT-Pipeline: Job Triggered Run
 
-![image](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/61d5b937-30fa-483d-915e-661c3ed2e37a)
+![image](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/65bed1d4-76cc-44f9-87dd-b4b41ee37225)
    * s3 bucket has 1 new customers .csv file and 1 new orders .csv file added to their respective folders
+   * Orders Pipeline Job trigger identifies the above files have arrived and automatically runs a pipeline refresh
    * Customer and Orders Streaming tables pull in only new records and add them to Live tables if they pass constraints
 
 ## Power BI Dashboards:
