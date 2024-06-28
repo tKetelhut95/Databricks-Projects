@@ -1,4 +1,4 @@
-# Databricks-Orders-Pipeline
+# Databricks Orders DLT Pipeline
 
 ## Business Requirements: 
   * The Leadership team needs a Dashboard that shows order amounts and customer account balances broken down by region, nation, and market segment...preferably into hemisphere views for East and West
