@@ -34,11 +34,13 @@ Orders-DLT-Pipeline: 2nd Run
 
    Western:
 
-![image](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/a559132e-722e-4321-9835-57880f52c04e)
+![image](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/9c679051-9931-4fae-be21-a4c25304f1e8)
+
 
    Eastern:
    
-![image](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/6336e8af-199a-4b46-92bb-b76443f07ade)
+![image](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/9746424f-8ead-42ba-ab9c-c470132ca5b4)
+
 
 ## Setup & Resources:
 
