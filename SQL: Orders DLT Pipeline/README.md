@@ -28,12 +28,12 @@
 
 ## Databricks: DLT Pipeline DAGs and Job
 
-`Orders-DLT-Pipeline: Initial Run`
+`Orders DLT Pipeline: Initial Run`
 
 ![image](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/609ebd23-912c-4a52-a599-46c709b25c59)
    * Pipeline run is successful. Rows in green are successfully transitioned to tables and rows in grey are filtered out due to constraints
 
-`Orders-DLT-Pipeline: Job Triggered Run`
+`Orders DLT Pipeline: Job Triggered Run`
 
 ![image](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/65bed1d4-76cc-44f9-87dd-b4b41ee37225)
 
