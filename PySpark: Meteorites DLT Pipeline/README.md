@@ -27,7 +27,11 @@
 
 ## Databricks: Notebooks 📔 
 
-* `meteorites`: creates a pipeline with bronze, silver, and gold tables to pull, clean, and transform the meteorite data using PySpark 
+* `meteorites`: creates a pipeline with bronze, silver, and gold tables to pull, clean, and transform the meteorite data using PySpark
+* Imports include the dlt module to use Python functions and pyspark.sql.functions to leverage SQL functions within PySpark code
+* Bronze (Streaming table) - Autoloader loads the data from s3 via the "cloud.files" format and specifies additional options for how to deal with the data...file metadata is also pulled using the "_metadata as source_metadata" expression
+* Silver (Streaming table) - Establishes expectations valid_data and valid_size that will drop rows that do not meet these expectations and changes data types of the "year" and "mass" fields
+* Gold (Live table) - Creates a Live table that modifies the "year" field to display a year format and extracts the longitude and latitude from the "geolocation" object
 
 
 ## Databricks: DLT Pipeline DAGs and Job
