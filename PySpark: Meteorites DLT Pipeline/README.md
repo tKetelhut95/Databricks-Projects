@@ -29,7 +29,7 @@
 
 * `meteorites`: creates a pipeline with bronze, silver, and gold tables to pull, clean, and transform the meteorite data using PySpark
 * Imports include the dlt module to use Python functions and pyspark.sql.functions to leverage SQL functions within PySpark code
-* Bronze (Streaming table) - Autoloader loads the data from s3 via the "cloud.files" format and specifies additional options for how to deal with the data...file metadata is also pulled using the "_metadata as source_metadata" expression
+* Bronze (Streaming table) - Autoloader loads the data from S3 Bucket via the "cloud.files" format and specifies additional options for how to deal with the data...file metadata is also pulled using the "_metadata as source_metadata" expression
 * Silver (Streaming table) - Establishes constraints valid_data and valid_size that will drop rows that do not meet expectations and changes data types of the "year" and "mass" fields
 * Gold (Live table) - Creates a Live table that modifies the "year" column to display a year format and extracts the longitude and latitude values from the "geolocation" object
 
@@ -51,7 +51,7 @@
 ![image](https://github.com/tKetelhut95/DEV/assets/16889892/f5f9083e-c61e-4a9c-9ce2-800024676241)
 
 ![image](https://github.com/tKetelhut95/DEV/assets/16889892/2acb030b-30df-4897-a302-5558e6ccea19)
-   * s3 bucket has 1 new meteorites .json file added to the meteorite_raw_data folder
+   * S3 bucket has 1 new meteorites .json file added to the meteorite_raw_data folder
    * Meteorites Pipeline Job: File Arrival Trigger identifies the above file has arrived and automatically runs a pipeline refresh
    * The Bronze Streaming table only pulls in the new records (70), the Silver Streaming table cleans (64) and drops (6) these new items, and the Gold Live table adds the valid rows (64) to the initial run rows (901) for a total (965)
 
