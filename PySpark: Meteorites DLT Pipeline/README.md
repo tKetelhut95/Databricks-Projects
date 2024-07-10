@@ -3,7 +3,7 @@
 ## Business Requirements: 
   * The NASA Meteorites Environment Office needs a Data Pipeline that ingests and cleans both historical and ongoing data for all meteorites that have landed on Earth as well as a Dashboard that visualizes this data
   * Meteorite data should only contain records with a valid date and a mass greater than or equal to 100
-  * The data needs to be updated automatically as new files are transported into the s3 buckets
+  * The data needs to be updated automatically as new files are transported into an AWS S3 Bucket
 
 
 ## Architecture:
@@ -18,8 +18,8 @@
 * `Meteorites_dataset_split.py`: Splits the dataset into 2 separate JSON files based on date (before_2000 & after_2000) to test an initial Databricks Pipeline run and a Job Trigger Run described below
 
 
-## Data Storage: AWS s3 Bucket
-* Amazon Web Services s3 Bucket to store the datasets
+## Data Storage: AWS S3 Bucket
+* Amazon Web Services S3 Bucket to store the datasets
 * Datasets are in JSON format and stored in the meteorite_raw_data folder
   
 ![image](https://github.com/tKetelhut95/DEV/assets/16889892/a06d7e74-ece4-4c59-ae8d-4c4a89aeadc4)
@@ -34,7 +34,7 @@
 * Gold (Live table) - Creates a Live table that modifies the "year" column to display a year format and extracts the longitude and latitude values from the "geolocation" object
 
 
-## Databricks: DLT Pipeline DAGs and Job
+## Databricks: DLT Pipeline DAGs & Job
 
 `Meteorites DLT Pipeline: Initial Run`
 
@@ -65,13 +65,18 @@
 ![image](https://github.com/tKetelhut95/DEV/assets/16889892/360832cd-925d-45df-bc12-3708ec3dbf36)
 
 
-## Setup & Other Resources:
+## Setup & Resources:
 
 Visual Studio Code Setup:
    * Language(s) - Python
    * Libraries - json
 
 Databricks Setup:
-   * Databricks via Amazon Web Services 
+   * Databricks via Amazon Web Services
    * Databricks Runtime 14.3 LTS
    * Language(s) - PySpark & Markdown
+
+Resources:
+   * Dataset - Github: jdorfman/awesome-json-datasets - NASA section - "Earth Meteorite Landings"
+   * Storage - Amazon Web Services S3 Bucket
+   * Data Visualization - Microsoft Power BI
