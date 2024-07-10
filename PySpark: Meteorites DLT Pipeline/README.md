@@ -57,7 +57,7 @@
 
 ## Power BI: Dashboard
    * Establish connection to Databricks and import the Meteorites Live table
-   * Leverage Power Query to perform data transformations and DAX SWITCH equation to create the "Mass Rank" calculated column 
+   * Leverage Power Query to perform data transformations and DAX SWITCH equation to create the "Mass Rank" calculated column
    * Visualize meteorite landings with an aerial view map with Mass Ranks based on meteorite mass and a table displaying descriptive meteorite data
    
    `Earth Meteorite Landings`:
