@@ -9,7 +9,7 @@
 ![Databricks-Orders-Pipeline](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/40b0bb2b-3c86-4acd-b097-32568a584fb3)
 
 
-## Data Source: AWS s3 Buckets & .csv files
+## Data Source: AWS s3 Bucket & .csv files
 
 * Datasets originate from Databricks sample datasets
 * Amazon Web Services s3 Bucket contains a separate folder for each dataset
@@ -65,7 +65,7 @@ Databricks Setup:
    * Language(s) - SQL & Markdown
 
 Resources:
-   * Storage - Amazon Web Services s3 buckets
+   * Storage - Amazon Web Services s3 bucket
    * Datasets - Databricks `Samples` Catalog > `tpch` Databases
    * Data Visualization - Microsoft Power BI
    
