@@ -77,6 +77,6 @@ Databricks Setup:
    * Language(s) - PySpark & Markdown
 
 Resources:
-   * Dataset - Github: jdorfman/awesome-json-datasets - NASA section - "Earth Meteorite Landings"
+   * Dataset - Github: `jdorfman` > `awesome-json-datasets` > `NASA section` > `Earth Meteorite Landings`
    * Storage - Amazon Web Services S3 Bucket
    * Data Visualization - Microsoft Power BI
