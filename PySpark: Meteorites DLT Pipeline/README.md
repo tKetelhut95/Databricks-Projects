@@ -18,7 +18,7 @@
 * `Meteorites_dataset_split.py`: Splits the dataset into 2 separate JSON files based on date (before_2000 & after_2000) to test an initial Databricks Pipeline run and a Job Trigger Run described below
 
 
-## Data Storage: AWS s3 Buckets
+## Data Storage: AWS s3 Bucket
 * Amazon Web Services s3 Bucket to store the datasets
 * Datasets are in JSON format and stored in the meteorite_raw_data folder
   
