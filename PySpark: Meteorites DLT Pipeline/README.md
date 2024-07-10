@@ -11,14 +11,14 @@
 ![Databricks-Meteorite-Pipeline](https://github.com/tKetelhut95/DEV/assets/16889892/627ac76e-2d8c-456b-a289-a169137fda16)
 
 
-## Data Source:
+## Data Source: GitHub & Visual Studio Code
 
 * Datasets originate from Github: jdorfman/awesome-json-datasets
 * Leverage Microsoft Visual Studio Code to create a python script "Meteorites_dataset_split.py"
 * `Meteorites_dataset_split.py`: Splits the dataset into 2 separate JSON files based on date (before_2000 & after_2000) to test an initial Databricks Pipeline run and a Job Trigger Run described below
 
 
-## Data Storage:
+## Data Storage: AWS s3 Buckets
 * Amazon Web Services s3 Bucket to store the datasets
 * Datasets are in JSON format and stored in the meteorite_raw_data folder
   
