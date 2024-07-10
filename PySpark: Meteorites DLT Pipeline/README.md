@@ -1,7 +1,7 @@
 # Databricks-PySpark: Meteorites DLT Pipeline
 
 ## Business Requirements: 
-  * The NASA Meteorites Environment Office needs a Data Pipeline that ingests and cleans both historical and ongoing data for all meteorites that have landed on Earth as well as a Dashboard that visualizes that data
+  * The NASA Meteorites Environment Office needs a Data Pipeline that ingests and cleans both historical and ongoing data for all meteorites that have landed on Earth as well as a Dashboard that visualizes this data
   * Meteorite data should only contain records with a valid date and a mass greater than or equal to 100
   * The data needs to be updated automatically as new files are transported into the s3 buckets
 
