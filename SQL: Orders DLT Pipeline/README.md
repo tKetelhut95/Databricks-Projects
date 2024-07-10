@@ -9,7 +9,7 @@
 ![Databricks-Orders-Pipeline](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/40b0bb2b-3c86-4acd-b097-32568a584fb3)
 
 
-## Data Source(s):
+## Data Source(s): AWS s3 Buckets & .csv files
 
 * Datasets originate from Databricks sample datasets
 * Amazon Web Services s3 Bucket contains a separate folder for each dataset
