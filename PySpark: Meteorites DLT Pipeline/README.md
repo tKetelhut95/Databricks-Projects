@@ -13,7 +13,7 @@
 
 ## Data Source: GitHub & Visual Studio Code
 
-* Datasets originate from Github: jdorfman/awesome-json-datasets
+* Datasets originate from GitHub: [jdorfman/awesome-json-datasets](https://github.com/jdorfman/awesome-json-datasets)
 * Leverage Microsoft Visual Studio Code to create a python script "Meteorites_dataset_split.py"
 * `Meteorites_dataset_split.py`: Splits the dataset into 2 separate JSON files based on date (before_2000 & after_2000) to test an initial Databricks Pipeline run and a Job Trigger Run described below
 
@@ -77,6 +77,6 @@ Databricks Setup:
    * Language(s) - PySpark & Markdown
 
 Resources:
-   * Dataset - Github: `jdorfman` > `awesome-json-datasets` > `NASA section` > `Earth Meteorite Landings`
+   * Dataset - GitHub: `jdorfman` > `awesome-json-datasets` > `NASA section` > `Earth Meteorite Landings`
    * Storage - Amazon Web Services S3 Bucket
    * Data Visualization - Microsoft Power BI
