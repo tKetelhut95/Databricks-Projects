@@ -9,7 +9,7 @@
 ![Databricks-Orders-Pipeline](https://github.com/tKetelhut95/Databricks-Orders-Pipeline/assets/16889892/40b0bb2b-3c86-4acd-b097-32568a584fb3)
 
 
-## Data Source(s): AWS s3 Buckets & .csv files
+## Data Source: AWS s3 Buckets & .csv files
 
 * Datasets originate from Databricks sample datasets
 * Amazon Web Services s3 Bucket contains a separate folder for each dataset
@@ -26,7 +26,7 @@
 * `fact_orders`: Orders Streaming tables import data (bronze) and clean data (silver). orders_by_customers Live table (gold) joins orders (silver) with customers (silver) and groups/rounds data
 * `hemisphere_views`: Eastern & Western Hemisphere Live tables select data from orders_by_customers (gold) and filter based on region
 
-## Databricks: DLT Pipeline DAGs and Job
+## Databricks: DLT Pipeline DAGs & Job
 
 `Orders DLT Pipeline: Initial Run`
 
