@@ -80,3 +80,6 @@ Resources:
    * Dataset - GitHub: `jdorfman` > `awesome-json-datasets` > `NASA section` > `Earth Meteorite Landings` (https://github.com/jdorfman/awesome-json-datasets)
    * Storage - Amazon Web Services S3 Bucket
    * Data Visualization - Microsoft Power BI
+   * 
+
+   C:\Users\tkete\OneDrive\Desktop\GitHub\Databricks-Projects\Databricks-Projects\Databricks-Projects\AWS-Glue-DC-Transactions\AWS-Glue-DC Transactions.png
