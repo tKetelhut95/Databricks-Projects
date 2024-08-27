@@ -4,7 +4,6 @@
   * You have identified a new data source that releases transactions executed by the DC government on a monthly basis
   * The Leadership Team wants you to build a Data Pipeline that pulls this data starting May 2024 and all future data after that
   * Every time a new file is uploaded to the S3 Bucket, the Data Pipeline needs to run automatically and send output data to a Postgres database where Business Intelligence Engineer and Analyst teams can work with the data
-  * Maximize cost savings on compute and storage by only pulling in the absolutely necessary fields and grouping the data to minimize the row count
 
 ## Architecture:
 
@@ -95,17 +94,18 @@
 `Problem`: 
    * Originally, I set up the PostgreSQL connection with the default settings AWS provides, but these did not work and resulted in a failed "Test Connection"
    * To make matters worse the CloudWatch log files did not provide helpful information to solve the issue...only the issue names of "Failed Status" and "Network Failure" with little to no description
-   * In order to solve this issues additiional troubleshooting was required
+   * In order to solve this issues additional troubleshooting was required
 
-`Troubleshooting`: Identified these variables as potential solutions 
-   * Credentials - updated to using Username and Password from the default Secrets Manager
-   * Publicly Accessible - changed the status of the RDS to "Publicly Accessible"
-   * Password Encryption - created a parameter group, switched password encryption from "scram-sha-256" to "md5", and attached parameter group to the RDS
-   * User Profile - after the "password encryption" step, created a new User Profile and granted it admin privileges to then run the "Test Connection" in AWS Glue
+`Troubleshooting`: Identify the following variables as potential solutions 
+   * Credentials - update to using Username and Password from the default Secrets Manager
+   * Publicly Accessible - change the status of the RDS to "Publicly Accessible"
+   * Password Encryption - create a parameter group, switch password encryption from "scram-sha-256" to "md5", and attach parameter group to the RDS
       * Credit: bansalakhil - https://repost.aws/questions/QUpkrhcfkYQtS2adbjpQ7quQ/cannot-connect-from-glue-to-rds-postgres#AN2SxYJ-3pT425XOS0GhUmQg
-   * Custom Driver - downloaded the newest custom driver .jar file from postgres website (https://jdbc.postgresql.org/download/), uploaded it to the S3 bucket, and pasted ARN into the Connection configuration
+   * User Profile - after the "password encryption" step, create a new User Profile and grant it admin privileges to then run the "Test Connection" in AWS Glue
+      * Credit: bansalakhil - https://repost.aws/questions/QUpkrhcfkYQtS2adbjpQ7quQ/cannot-connect-from-glue-to-rds-postgres#AN2SxYJ-3pT425XOS0GhUmQg
+   * Custom Driver - download the newest custom driver .jar file from postgres website (https://jdbc.postgresql.org/download/), upload it to the S3 bucket, and paste ARN into the Connection configuration
       * Credit: Hongbo Miao - https://stackoverflow.com/questions/76901396/failed-to-connect-amazon-rds-in-aws-glue-data-catalogs-connection
-   * Network - established a NAT Gateway, configured a route table to have an associated subnet that connects to the NAT Gateway, and ensured the RDS and Connection details in AWS Glue are connected to the NAT Gateway
+   * Network - establish a NAT Gateway, configure a route table to have an associated subnet that connects to the NAT Gateway, and ensure the RDS and Connection details in AWS Glue are connected to the NAT Gateway
       * Credit: blink - https://www.youtube.com/watch?v=AOQ73bD2Hls
    
 `Solution`: The following combination of the variable changes resulted in a successful PostgreSQL "Test Connection" and Crawler Run
@@ -162,8 +162,8 @@
 ![image](https://github.com/tKetelhut95/DEV/blob/main/Images/Postgres%20dc_transactions%20table.png?raw=true)
 
 `Materialized Views`:
-   * Develop Materialzied Views using data from the dc_transactions table so that users can get the data tables they are looking for by quering them
-   * Include Refresh Concurrently statements to ensure that even if one user is refreshing the Materialized View, others will still be able to query the data wihtout being blocked 
+   * Develop Materialzied Views using data from the dc_transactions table so that users can get the data tables they are looking for by querying the views
+   * Include Refresh Concurrently statements to ensure that even if one user is refreshing the Materialized View...others will still be able to query the data without being blocked 
    * Need a Unique Index for each Materialized View to ensure Refresh Concurrently statements can function
 
 `MaterializedView_agency_transactions_rank.sql`:
