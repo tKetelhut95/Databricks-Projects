@@ -144,16 +144,15 @@
 
 ![image](https://github.com/tKetelhut95/DEV/blob/main/Images/AWS-Glue%20Pipeline.png?raw=true)
 
-`DC-Transactions Pipeline: Sample Dataset Run`
+`DC-Transactions Pipeline: Sample Dataset Run`: 25 rows
 
 ![image](https://github.com/tKetelhut95/DEV/blob/main/Images/AWS-Glue%20Pipeline%20Initial%20Run.png?raw=true)
    * Test Pipeline run is successful and the data is located in the Postgres data table "dc_transactions". Start up time: 14 seconds & Duration: 1 minute 1 second 
 
-`DC-Transactions Pipeline: Full Dataset Run`
+`DC-Transactions Pipeline: Full Dataset Run`: 2K rows
 
 ![image](https://github.com/tKetelhut95/DEV/blob/main/Images/AWS-Glue%20Pipeline%20Full%20Run.png?raw=true)
-   * Valid_size constraint removes 98 rows that aren't greater than or equal to a mass of 100
-   * Valid_date rule deletes 1 row that doesn't contain a date value
+   * Full Pipeline run is successful. Start up time: 13 seconds & Duration: 1 minute 2 seconds
 
 ## Postgres: DC Transactions Table & Materialized Views 
 
